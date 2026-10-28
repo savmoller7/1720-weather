@@ -33,7 +33,7 @@ body {
     padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     background-position: center;
     transition: background-image 0.5s ease;
 }
