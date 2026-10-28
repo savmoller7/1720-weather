@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks | DWDD1720</title>
+
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- OPEN GRAPH TAGS -->
+    <meta property="og:title" content="National Parks | DWDD1720">
+    <meta property="og:description"
+        content="Explore current weather conditions at four beautiful national parks.">
+    <meta property="og:image" content="https://savmoller7.github.io/1720-weather/images/opengraph.jpg">
+    <meta property="og:url" content="https://savmoller7.github.io/1720-weather/">
+    <meta property="og:logo" content="https://savmoller7.github.io/1720-weather/images/logo.svg">
+    <meta property="og:type" content="website">
+
+
+    <!-- FAV ICON LINKS -->
+    <link rel="icon" type="image/png" href="/1720-weather/favicon-96x96.png" sizes="96x96" >
+    <link rel="icon" type="image/svg+xml" href="/1720-weather/favicon.svg" >
+    <link rel="shortcut icon" href="/1720-weather/favicon.ico" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/1720-weather/apple-touch-icon.png" >
+    <meta name="apple-mobile-web-app-title" content="Weather" >
+    <link rel="manifest" href="/1720-weather/site.webmanifest" >
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/year.js" defer></script>
+    <script src="scripts/getWeather.js" type="module"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="50" height="50">
+        <span></span>
+        <button id="hamburger" class="hamburger" aria-label="Nav Link Button"></button>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="index.html">Weather Data</a></li>
+            <li><a href="#">Explore Parks</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Weather Data</h1>
+        <div class="park-heading">
+            <p>Weather For</p>
+            <h2 id="park-name"></h2>
+            <p>National Park</p>
+        </div>
+        <div id="weather-info"></div>
+        <div class="park-buttons" id="parks">
+            <button id="glacier" class="active">Glacier</button>
+            <button id="olympic">Olympic</button>
+            <button id="sands">White Sands</button>
+            <button id="zion">Zion</button>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.youtube.com/@savannahmoller5223" target="_blank"><img src="images/icon-youtube.svg"
+                    alt="YouTube Icon" width="16" height="16"></a>
+            <a href="https://github.com/savmoller7" target="_blank"><img src="images/icon-github.svg" alt="GitHub Icon"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/savannah-moller-494623241/" target="_blank"><img
+                    src="images/icon-linkedin.svg" alt="LinkedIn Icon" width="16" height="16"></a>
+            <a href="https://www.facebook.com/savvym000/" target="_blank"><img src="images/icon-facebook.svg"
+                    alt="Facebook Icon" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> &bull; Savannah Moller &bull; DWDD1720</p>
+    </footer>
+
+
+</body>
+
+</html>

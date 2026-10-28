@@ -1,0 +1,87 @@
+@media only screen and (min-width: 40rem) {
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    /**************** NAVIGATION ****************/
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 8px;
+        margin-left: 0px;
+        list-style: none;
+    }
+
+    nav a {
+        padding: .4rem 20px;
+    }
+
+
+
+    /**************** HAMBURGER ****************/
+    .hamburger {
+        display: none;
+    }
+
+
+    /**************** MAIN ****************/
+.sbs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+    /**************** Park Buttons ****************/
+.park-buttons {
+    grid-template-columns: repeat(4, 1fr);
+    width: calc(100% - 32px);
+    max-width: 1200px;
+    gap: 12px;
+}
+
+.park-buttons button {
+    min-height: 70px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+    /**************** Weather Info ****************/
+.park-heading p:first-child,
+.park-heading p:last-child {
+    font-size: 20px;
+}
+
+#park-name {
+    font-size: 38px;
+}
+
+.current-temp p {
+    font-size: 28px;
+}
+
+.current-temp h2 {
+    font-size: 8rem;
+}
+
+.description {
+    font-size: 26px;
+}
+
+.low-high {
+    font-size: 20px;
+}
+
+.weather-details p {
+    font-size: 18px;
+}
+
+}
